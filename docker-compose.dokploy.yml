@@ -157,7 +157,7 @@ services:
       - traefik.docker.network=dokploy-network
       - traefik.http.routers.lobbystack-http.rule=Host(`lobby.itak.live`)
       - traefik.http.routers.lobbystack-http.entrypoints=web
-      - traefik.http.routers.lobbystack-http.middlewares=redirect-to-https
+      - traefik.http.routers.lobbystack-http.middlewares=redirect-to-https@file
 
   worker:
     build:
